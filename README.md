@@ -30,7 +30,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/LineyGH/basic-python-keylogger.git
 Navigate to the project directory:
 bash
 Copy code
