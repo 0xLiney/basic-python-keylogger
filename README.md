@@ -1,51 +1,70 @@
-Basic Python Keylogger (Client and Server Sides)
-Overview
-This project consists of a basic keylogger implemented in Python, featuring both client and server components. The server-side script listens for incoming connections and logs keystrokes sent by the client-side script.
-
-Note: This project is for educational purposes only. The author is not responsible for any malicious or illegal use of this tool. Use responsibly and with documented permission.
-
-Features
-Server Side
-Compatibility: Works on multiple devices (Windows, Mac, Linux, etc.).
-Functionality:
-Captures all incoming keystrokes.
-Stores captured keystrokes in a KeyLog.txt file located in the same directory.
-Displays connected IP addresses.
-Client Side
-Compatibility: Works on multiple devices (Windows, Mac, Linux, etc.).
-Functionality:
-Establishes a connection with the server.
-Sends all captured keystrokes to the server, where they are stored.
-Important:
-Ensure the server IP address is updated in the client script before use to establish a connection.
-Usage
-Run the server-side script to start listening for connections.
-Run the client-side script on the target machine to initiate a connection and begin capturing keystrokes.
-Disclaimer
-STRICTLY FOR EDUCATIONAL PURPOSE ONLY.
-I do not take responsibility for any malicious or illegal use of this tool. I do not condone the use of this keylogger for illicit activities unless proper permission has been provided and documented.
-
+Basic Python Keylogger
+This project provides a simple Python-based keylogger with both client and server components, designed strictly for educational purposes.
 
 Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/LineyGH/basic-python-keylogger.git
-Navigate to the project directory:
-bash
-Copy code
-cd your-repo
-Run the server script:
-bash
-Copy code
-python3 server.py
-Modify the client script with the server IP address and run:
-bash
-Copy code
-python3 client.py
+Clone the Repository:
+
+   
+   git clone https://github.com/LineyGH/basic-python-keylogger.git
+   
 
 
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request for improvements or features.
+Navigate to the Project Directory:
 
-Feel free to edit or replace the placeholder content with your own!
+   
+   cd basic-python-keylogger
+   
+
+
+Install Required Dependencies:
+
+   Ensure you have Python installed. The keylogger utilizes the pynput library for capturing keyboard inputs. Install it using:
+
+   
+   pip install pynput
+   
+
+
+Usage
+Run the Server:
+
+   The server script listens for incoming connections and logs keystrokes sent by the client.
+
+   
+   python server.py
+   
+
+
+   This will create a KeyLog.txt file in the same directory to store captured keystrokes.
+
+Configure the Client:
+
+   Before running the client script, update the server IP address in client.py to match your server's IP.
+
+   
+   # Inside clientside.py
+   SERVER_IP = 'your_server_ip_here'
+   
+
+
+Run the Client:
+
+   The client script captures keystrokes and sends them to the server.
+
+   
+   python client.py
+   
+
+
+Implementation Details
+Server Side:
+Compatible with multiple operating systems (Windows, macOS, Linux).
+Captures all incoming keystrokes and stores them in KeyLog.txt.
+Displays the connected client's IP address.
+
+Client Side:
+Compatible with multiple operating systems.
+Establishes a connection with the server and transmits captured keystrokes.
+
+Disclaimer
+This keylogger is intended solely for educational purposes. Unauthorized use on systems without explicit consent is illegal and unethical. The author is not responsible for any misuse of this tool. 
