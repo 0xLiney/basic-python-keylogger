@@ -5,7 +5,7 @@ Installation
 Clone the Repository:
 
    
-   git clone https://github.com/LineyGH/basic-python-keylogger.git
+   git clone https://github.com/0xLiney/basic-python-keylogger.git
    
 
 
